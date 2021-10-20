@@ -1,6 +1,6 @@
 def CheckNodes(){
     NotReadyNodes = sh(
-        script: 'kubectl get nodes | grep NotReady'
+        script: 'kubectl get nodes | grep NotReady',
         returnStdout: true
     )
     if(NotReadyNodes.isEmpty()){
