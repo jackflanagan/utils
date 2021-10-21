@@ -1,7 +1,7 @@
 def addtest(){
     NotReadyNodes = sh(
         script: 'kubectl get nodes | grep NotReady',
-        returnStdout: true
+        returnStatus: true
     )
     echo "Pointer 1"
     echo NotReadyNodes
