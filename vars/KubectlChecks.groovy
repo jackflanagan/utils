@@ -1,3 +1,3 @@
-def CheckNodes(){
+def checknodes(){
     echo "Testing"
 }
