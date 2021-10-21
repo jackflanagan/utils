@@ -4,7 +4,7 @@ def addtest(){
         returnStatus: true
     )
     echo "Pointer 1"
-    if(NotReadyNodes=1){
+    if(NotReadyNodes==1){
         echo "No Nodes in NotReady status at time of running"
     } else {
         echo "Nodes in NotReady state"
