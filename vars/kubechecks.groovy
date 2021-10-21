@@ -1,4 +1,4 @@
-def addtest(){
+def checknodes(){
     NotReadyNodes = sh(
         script: 'kubectl get nodes | grep NotReady',
         returnStatus: true
