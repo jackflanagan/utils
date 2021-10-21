@@ -3,7 +3,6 @@ def addtest(){
         script: 'kubectl get nodes | grep NotReady',
         returnStatus: true
     )
-    echo "Pointer 1"
     if(NotReadyNodes==1){
         echo "No Nodes in NotReady status at time of running"
     } else {
